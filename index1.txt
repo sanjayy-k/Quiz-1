@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+
+.grid,.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9{
+    display:inline-block;
+    height: 400px;
+    width: 600px;
+    position: relative;top: 250px;left: 500px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+   
+}
+.item,.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9{
+    background-color:aquamarine;
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+.a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10{
+    height: 250px;
+    width: 600px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    background-color:darkseagreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+#prevButton,#nextButton{
+    position: relative;left:740px;top: 60px;
+    background-color:steelblue;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+#checkanswer{
+    position: relative;top: 100px;left: 7px;
+    block-size: 35px;
+    font-size:medium;
+    background-color:skyblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url('https://i.pinimg.com/736x/a4/79/c3/a479c310a5548d5f033a06d16775ae98.jpg');
+}
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item">1.Who Created JavaScript?</div>
+        <div class="a1">
+            <input type="radio" id="opt1" name="answer1" value="Brendean Eich">
+            <label for="text">Brendean Eich</label>
+            <input type="radio" id="opt2" name="answer1" value="DennisRitchie">
+            <label for="text">DennisRitchie</label><br><br><br><br>
+            <input type="radio" id="opt3" name="answer1" value="Van Rossum">
+            <label for="text">Van Rossum</label>
+            <input type="radio" id="opt4" name="answer1" value="Brendean Eich">
+            <label for="text">Elon Musk</label>
+          
+        </div>
+    </div>
+</div>
+    <div class="grid1">
+        <div class="item1">2.In Which Year JavaScript Was Created?</div>
+        <div class="a2">
+            <input type="radio" id="opt11" name="answer2" value="1995">
+            <label for="text">1995</label>
+            <input type="radio" id="opt12" name="answer2" value="2008">
+            <label for="text">2008</label><br><br><br><br>
+            <input type="radio" id="opt13" name="answer2" value="2000">
+            <label for="text">2000</label>
+            <input type="radio" id="opt14" name="answer2" value="1998">
+            <label for="text">1998</label>   
+            
+        </div>
+    </div>
+</div>
+<div class="grid2">
+    <div class="item2">3.which of the folowing keywords is used to define a Variable in Javascript?</div>
+    <div class="a3">
+        <input type="radio" id="opt31" name="answer3" value="Var">
+        <label for="text">Var</label>
+        <input type="radio" id="opt32" name="answer3" value="let">
+        <label for="text">let</label><br><br><br><br>
+        <input type="radio" id="opt33" name="answer3" value="Both A and B">
+        <label for="text">Both A and B</label>
+        <input type="radio" id="opt34" name="answer3" value="None of these">
+        <label for="text">None of these</label>  
+        
+    </div>
+</div>
+</div>
+<div class="grid3">
+    <div class="item3">4.which of the folowing methods can be used to display data in some form using javascript</div>
+    <div class="a4">
+        <input type="radio" id="opt41" name="answer4" value="document.write">
+        <label for="text">document.write</label>
+        <input type="radio" id="opt42" name="answer4" value="console.log">
+        <label for="text">console.log</label><br><br><br><br>
+        <input type="radio" id="opt43" name="answer4" value="windows.alert">
+        <label for="text">windows.alert</label>
+        <input type="radio" id="opt44" name="answer4" value="All the above">
+        <label for="text">All the above</label>   
+        
+    </div>
+</div>
+</div>
+<div class="grid4">
+    <div class="item4">5.which is used to check whether a given property is valid or not?</div>
+    <div class="a5">
+        <input type="radio" id="opt51" name="answer5" value="in">
+        <label for="text">in</label>
+        <input type="radio" id="opt52" name="answer5" value="is in">
+        <label for="text">is in</label><br><br><br><br>
+        <input type="radio" id="opt53" name="answer5" value="exists">
+        <label for="text">exists</label>
+        <input type="radio" id="opt54" name="answer5" value="lies">
+        <label for="text">lies</label>   
+       
+    </div>
+</div>
+</div>
+<div class="grid5">
+    <div class="item5">6.Upon encountering empty statements,what does the Javascript Interpreter do?</div>
+    <div class="a6">
+        <input type="radio" id="opt61" name="answer6" value="Throws an error">
+        <label for="text">Throws an error</label>
+        <input type="radio" id="opt62" name="answer6" value="ignores the statement">
+        <label for="text">ignores the statement</label><br><br><br><br>
+        <input type="radio" id="opt63" name="answer6" value="gives a warning">
+        <label for="text">gives a warning</label>
+        <input type="radio" id="opt64" name="answer6" value="none of the above">
+        <label for="text">none of the above</label>
+       
+    </div>
+</div>
+</div>
+<div class="grid6">
+    <div class="item6">7.Which of the following methods is used to access HTML elements using Javascript?</div>
+    <div class="a7">
+        <input type="radio" id="opt71" name="answer7" value="getElementbyId()">
+        <label for="text">getElementbyId()</label>
+        <input type="radio" id="opt72" name="answer7" value="getElementsByClassName()">
+        <label for="text">getElementsByClassName()</label><br><br><br><br>
+        <input type="radio" id="opt73" name="answer7" value="Both A and B">
+        <label for="text">Both A and B</label>
+        <input type="radio" id="opt74" name="answer7" value="None of the above">
+        <label for="text">None of the above</label>  
+       
+    </div>
+</div>
+</div>
+<div class="grid7">
+    <div class="item7">8.When an operator's value is NULL, the typeof returned by the unary operator is:?</div>
+    <div class="a8">
+        <input type="radio" id="opt81" name="answer8" value="Boolean">
+        <label for="text">Boolean</label>
+        <input type="radio" id="opt82" name="answer8" value="undefined">
+        <label for="text">undefined</label><br><br><br><br>
+        <input type="radio" id="opt83" name="answer8" value="object">
+        <label for="text">object</label>
+        <input type="radio" id="opt84" name="answer8" value="Integer">
+        <label for="text">Integer</label> 
+       
+    </div>
+</div>
+</div>
+<div class="grid8">
+    <div class="item8">9.What will be the output of the following code snippet print(typeof(NaN));</div>
+    <div class="a9">
+        <input type="radio" id="opt91" name="answer9" value="object">
+        <label for="text">object</label>
+        <input type="radio" id="opt92" name="answer9" value="Number">
+        <label for="text">Number</label><br><br><br><br>
+        <input type="radio" id="opt93" name="answer9" value="string">
+        <label for="text">string</label>
+        <input type="radio" id="opt94" name="answer9" value="None of the above">
+        <label for="text">None of the above</label>
+      
+    </div>
+</div>
+</div>
+<div class="grid9">
+    <div class="item9">10.Which of the following are closure in javascript?</div>
+    <div class="a10">
+        <input type="radio" id="opt101" name="answer10" value="Variables">
+        <label for="text">Variables</label>
+        <input type="radio" id="opt102" name="answer10" value="Functions">
+        <label for="text">Functions</label><br><br><br><br>
+        <input type="radio" id="opt103" name="answer10" value="objects">
+        <label for="text">objects</label>
+        <input type="radio" id="opt104" name="answer10" value="All the above">
+        <label for="text">All the above</label>
+        <button id="checkanswer" onclick="calculateScore()">Check Answers</button>
+    </div>
+</div>
+</div>
+<div class="navigation">
+    <button id="prevButton" onclick="showQuestion(-1)">Previous</button>
+    <button id="nextButton" onclick="showQuestion(1)">Next</button>
+</div>
+<script>
+    //Answers:1.Brendean Eich, 2.1995, 3.Both A and B, 4.All the above, 5.in, 6.ignores the statement, 7.Both A and B, 8.object, 9.false, 10.All the above
+</script>
+<script>
+    // JavaScript code to control quiz navigation
+    const questionDivs = document.querySelectorAll('.grid, .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9');
+    let currentQuestion = 0;
+
+    function showQuestion(offset) {
+        questionDivs[currentQuestion].style.display = 'none';
+        currentQuestion += offset;
+
+        if (currentQuestion < 0) {
+            currentQuestion = 0;
+        } else if (currentQuestion >= questionDivs.length) {
+            currentQuestion = questionDivs.length - 1;
+        }
+
+        questionDivs[currentQuestion].style.display = 'block';
+    }
+
+    // Initially show the first question and hide others
+    for (let i = 1; i < questionDivs.length; i++) {
+        questionDivs[i].style.display = 'none';
+    }
+    function calculateScore() {
+        // Define the correct answers
+        const correctAnswers = [
+            "Brendean Eich", "1995", "Both A and B", "All the above", "in",
+            "ignores the statement", "Both A and B", "object", "Number", "All the above"
+        ];
+
+        // Initialize the total score
+        let totalScore = 0;
+
+        // Loop through each question and check if the selected answer matches the correct answer
+        for (let i = 1; i <= 10; i++) {
+            const selectedOption = document.querySelector(`input[name="answer${i}"]:checked`);
+            if (selectedOption) {
+                const userAnswer = selectedOption.value;
+                if (userAnswer === correctAnswers[i - 1]) {
+                    totalScore++;
+                }
+            }
+        }
+
+        // Display the total score in an alert
+        alert(`Your Total Score: ${totalScore} out of 10`);
+    }
+</script>
+</body>
+
+</body>
+</html>
